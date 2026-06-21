@@ -1,0 +1,32 @@
+info:
+  name: Categories tasks get
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/api/tasks/1/categories
+  params:
+    - name: name
+      value: personal
+      type: query
+      disabled: true
+    - name: category_id
+      value: "4"
+      type: query
+      disabled: true
+  body:
+    type: multipart-form
+    data:
+      - name: ""
+        type: file
+        value: []
+  auth:
+    type: bearer
+    token: 5|rDIuQe8mWGP0AKfM3qFVMb9hGswAZe3GWHVYVHfJ45d87966
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

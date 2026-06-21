@@ -1,0 +1,30 @@
+info:
+  name: get  all tasks
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://127.0.0.1:8000/api/tasks/
+  params:
+    - name: user_id
+      value: "1"
+      type: query
+      disabled: true
+    - name: priority
+      value: "1"
+      type: query
+      disabled: true
+    - name: description
+      value: authintcation in laravel by santcum
+      type: query
+      disabled: true
+  auth:
+    type: bearer
+    token: 3|fGVCYYQOhoE681aSVnP48GLXXOA0E29ZzQfd6fZk19d6b670
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

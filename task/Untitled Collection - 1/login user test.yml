@@ -1,0 +1,35 @@
+info:
+  name: "login user test "
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/api/login/?email=mohamed@example.com&password=123456789
+  headers:
+    - name: Accept
+      value: application/json
+  params:
+    - name: name
+      value: mohamed Ragab
+      type: query
+      disabled: true
+    - name: email
+      value: mohamed@example.com
+      type: query
+    - name: password
+      value: "123456789"
+      type: query
+    - name: password_confirmation
+      value: "123456789"
+      type: query
+      disabled: true
+  auth:
+    type: bearer
+    token: 2|sMWDMQKTwTHdyP4d3CliZH7GPew1ZzjilLtF1s5ieeec319e
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

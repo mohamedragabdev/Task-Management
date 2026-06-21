@@ -1,0 +1,30 @@
+info:
+  name: store tasks
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/api/tasks/?title=laravel middelware 13&priority=high&status=in progress&description=try  and catch secutity
+  params:
+    - name: title
+      value: laravel middelware 13
+      type: query
+    - name: priority
+      value: high
+      type: query
+    - name: status
+      value: in progress
+      type: query
+    - name: description
+      value: try  and catch secutity
+      type: query
+  auth:
+    type: bearer
+    token: 3|fGVCYYQOhoE681aSVnP48GLXXOA0E29ZzQfd6fZk19d6b670
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,34 @@
+info:
+  name: "Profile store "
+  type: http
+  seq: 6
+
+http:
+  method: DELETE
+  url: http://127.0.0.1:8000/api/profiles/1
+  params:
+    - name: phone
+      value: "01102960969"
+      type: query
+      disabled: true
+    - name: address
+      value: مصر
+      type: query
+      disabled: true
+    - name: dob
+      value: 2005-07-14
+      type: query
+      disabled: true
+    - name: bio
+      value: " engineering"
+      type: query
+      disabled: true
+  auth:
+    type: bearer
+    token: 7|2towcSwzVqwmzTSHqRur3Hr6MrgtTsSxTEnPxDkO6ad2da37
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

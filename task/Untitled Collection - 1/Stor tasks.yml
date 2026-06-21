@@ -1,0 +1,30 @@
+info:
+  name: Stor tasks
+  type: http
+  seq: 8
+
+http:
+  method: DELETE
+  url: http://127.0.0.1:8000/api/tasks/1/
+  params:
+    - name: title
+      value: Laravel13 update task
+      type: query
+      disabled: true
+    - name: priority
+      value: high
+      type: query
+      disabled: true
+    - name: status
+      value: in progress
+      type: query
+      disabled: true
+  auth:
+    type: bearer
+    token: 3|fGVCYYQOhoE681aSVnP48GLXXOA0E29ZzQfd6fZk19d6b670
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

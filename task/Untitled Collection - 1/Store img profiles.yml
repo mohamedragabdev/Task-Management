@@ -1,0 +1,38 @@
+info:
+  name: Store img profiles
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/api/profiles?phone=01102960969&address=tamia&dob=2005-07-14&bio=communication engineering
+  params:
+    - name: phone
+      value: "01102960969"
+      type: query
+    - name: address
+      value: tamia
+      type: query
+    - name: dob
+      value: 2005-07-14
+      type: query
+    - name: bio
+      value: communication engineering
+      type: query
+  body:
+    type: multipart-form
+    data:
+      - name: img_profile
+        type: file
+        value:
+          - C:\Users\lenovo\Downloads\lone-tree-crescent-moon-half-moon-starry-sky-night-lake-3840x2160-7701.jpg
+        contentType: image
+  auth:
+    type: bearer
+    token: 1|rRZtoMH3GGuG2FWbJrFeXHs0XsRm8MEW1sIcZhyZa7f5cc79
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
